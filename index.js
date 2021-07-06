@@ -13,19 +13,19 @@ client.on('message', (message) => {
             member.voice.setMute(true)
             member.voice.setDeaf(true)
         });
-        message.channel.send('Shutup; vaymoodu; mindathe');
+        message.channel.send('Shushhhhh is ON');
     } else if (shouldUnMute(message.content)) {
         members.forEach(member => {
             member.voice.setMute(false)
             member.voice.setDeaf(false)
         });
-        message.channel.send('പറ പറ പറ പറ');
+        message.channel.send('Shushhhhh is OFF');
     }
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);
 
-const shouldMute = (messageContent) => ['/shutup', '/vaymoodu', '/muteall'].includes(messageContent)
-const shouldUnMute = (messageContent) => ['/speakup', '/vaythora', '/unmuteall'].includes(messageContent)
+const shouldMute = (messageContent) => ['/shutup', '/vaymoodu', '/muteall', 'm'].includes(messageContent)
+const shouldUnMute = (messageContent) => ['/speakup', '/vaythora', '/unmuteall', 'u'].includes(messageContent)
 
 

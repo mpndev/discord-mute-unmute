@@ -17,5 +17,5 @@ yarn start
 
 ## Commands
 
-`/shutup`, `/vaymoodu`, `muteall` to mute server
-`/speakup`, `/vaythora`, `unmuteall` to unmute server
+`/shutup`, `/vaymoodu`, `muteall`, `m` to mute server
+`/speakup`, `/vaythora`, `unmuteall`, `u` to unmute server
